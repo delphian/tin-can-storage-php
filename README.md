@@ -7,25 +7,27 @@ See the example.php for an example of using the TinCanStorage class.
 
 1. Setup the configuration array
 
-    // Setup credentials.
-    $config = array(
-      // Name of the application.
-      'name' => getenv('tincanappname'),
-      // User name.
-      'id' => getenv('tincanappid'),
-      // User password.
-      'key' => getenv('tincanappkey'),
-      // Use secured connection or not.
-      'https' => FALSE,
-      'debug' => array(
-        // Log all curl requests to the server.
-        'request' => TRUE,
-        // Log all curl responses to the server.
-        'response' => TRUE,
-        // Print out all messages logged when class is deconstructed.
-        'print' => FALSE,
-      ),
-    );
+<code><pre>
+// Setup credentials.
+$config = array(
+  // Name of the application.
+  'name' => getenv('tincanappname'),
+  // User name.
+  'id' => getenv('tincanappid'),
+  // User password.
+  'key' => getenv('tincanappkey'),
+  // Use secured connection or not.
+  'https' => FALSE,
+  'debug' => array(
+    // Log all curl requests to the server.
+    'request' => TRUE,
+    // Log all curl responses to the server.
+    'response' => TRUE,
+    // Print out all messages logged when class is deconstructed.
+    'print' => FALSE,
+  ),
+);
+</pre></code>
 
 2. Instantiate the class
 
