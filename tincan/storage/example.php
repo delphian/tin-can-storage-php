@@ -52,3 +52,7 @@ if ($Storage = TinCanStorage::connect($config)) {
   // Remove previously inersted data from remote database.
   $Storage->delete(array('table' => 'testTable'));
 }
+else {
+  print("Storage class could not be instantiated. Please enable the print \
+    debug setting for more information.\n");
+}

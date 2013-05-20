@@ -278,6 +278,7 @@ class TinCanStorage {
     ); 
 
     if ($this->debug['request'] == TRUE) {
+      $this->debug['messages'][] = $url;
       $this->debug['messages'][] = $payload;
     }
     curl_setopt_array($ch, $options); 
